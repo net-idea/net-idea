@@ -1,0 +1,58 @@
+/* the overlay element */
+
+div.overlay {
+  /* dimensions after the growing animation finishes  */
+  width: 600px;
+  height: 370px;
+  /* initially overlay is hidden */
+  display: none;
+  /* some padding to layout nested elements nicely  */
+  /* padding: 55px 30px 55px 55px; top right bottom left */
+  padding: 30px 30px 30px 35px; /* top right bottom left */
+  /* growing background image */
+  color: #0a0a0a;
+  background-image: url(/assets/img/layover-kita-background.png);
+  /* background-image:url(../img/overlay/layover-background-white.png); */
+}
+
+/* default close button positioned on upper right corner */
+
+div.overlay div.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background-image: url(/assets/img/layover-close.png);
+}
+
+div.overlay div.close:hover {
+  background-image: url(/assets/img/layover-close-hover.png);
+}
+
+/* black */
+
+div.overlay.black {
+  color: #fff;
+  background: url(/assets/img/layover-background-transparent.png) no-repeat !important;
+}
+
+/* petrol */
+
+div.overlay.petrol {
+  color: #fff;
+  background: url(/assets/img/layover-background-petrol.png) no-repeat !important;
+}
+
+div.black h2,
+div.petrol h2 {
+  color: #ddd;
+}
+
+div.layoverContent {
+  height: 365px;
+  padding-right: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+}

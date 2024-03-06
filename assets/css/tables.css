@@ -1,0 +1,47 @@
+#net-idea table.set,
+#net-idea table.form {
+  /* margin: 0px; oben rechts unten links */
+  border-collapse: collapse;
+}
+
+#net-idea table.set th,
+#net-idea table.set td,
+#net-idea table.form th,
+#net-idea table.form td {
+  padding: 0; /* top right bottom left */
+  /* text-align: left; */
+  vertical-align: top;
+}
+
+#net-idea table.set .label,
+#net-idea table.form .fields {
+  /* top right bottom left */
+  padding: 0 3px 3px 0;
+  text-align: right;
+  vertical-align: top;
+}
+
+#net-idea table.set .fields,
+#net-idea table.form .fields {
+  /* padding: 0px 0px 3px 0px; top right bottom left */
+  /* top right bottom left */
+  padding: 0 3px 3px 0;
+  text-align: left;
+  vertical-align: top;
+  /* overflow: scroll; */
+  /* position: relative; */
+}
+
+#net-idea table.set .note,
+#net-idea table.form .note { /* eingeätzte Zusatzzeile */
+  /* top right bottom left */
+  padding: 0 0 0 5px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#net-idea table.set .comment {
+  font-size: 10px;
+  /* line-height: 9px; */
+  color: #556;
+}

@@ -1,0 +1,13 @@
+/**
+ * Aussehen der Inhalte innerhalb der Portfolio Übersicht...
+ */
+
+.index_portfolio_text h3 {
+  margin: 0 0 5px;
+}
+
+.index_portfolio_text p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.3em;
+}

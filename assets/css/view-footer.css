@@ -1,0 +1,160 @@
+/**
+ * Beschreibung aller Elemente innerhalb der Fusszeile...
+ */
+
+#net-idea #footer {
+  color: #8e8e8e;
+}
+
+#net-idea #footer p,
+#net-idea #footer .text {
+  color: #8e8e8e;
+}
+
+#net-idea #footer a {
+  /* padding: 1px 2px 0 2px; top right bottom left */
+  color: #00c2ff;
+  text-decoration: none;
+}
+
+#net-idea #footer a:link {
+  color: #00c2ff;
+}
+
+#net-idea #footer a:visited {
+  color: #00c2ff;
+}
+
+#net-idea #footer a:hover {
+  color: #00c2ff;
+  text-decoration: underline;
+}
+
+#net-idea #footer a:active {
+  color: #00c2ff;
+}
+
+#net-idea #footer img {
+  margin-right: 5px;
+}
+
+#net-idea #footer ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#net-idea #footer ul li {
+  display: inline;
+  padding-right: 8px;
+  padding-left: 10px;
+  border-left: 1px dotted #ddd;
+  color: #ddd;
+}
+
+#net-idea #footer ul li:before {
+  /* content: " | "; */
+}
+
+#net-idea #footer ul li:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+#net-idea #footer ul li:first-child:before {
+  /* content: ""; */
+}
+
+* html #net-idea #footer ul li {
+  border-left: 1px dotted #ddd;
+  padding-left: 4px;
+}
+
+* + html #net-idea #footer ul li {
+  border-left: 1px dotted #ddd;
+  padding-left: 4px;
+}
+
+* html #net-idea #footer ul li {
+  border-left: expression(this.previousSibling==null?'none':'1px dotted #ddd');
+  padding-left: expression(this.previousSibling==null?'0':'4px');
+}
+
+/**
+ * Struktur zur erweiterten Darstellung von Inhalten innerhalb der Fußzeile...
+ */
+
+#row2 {
+  background: url(/assets/img/content_2_bg.jpg) repeat-y 0% 0%;
+}
+
+#row2 .main {
+  background: url(/assets/img/content_2_top_bg.jpg) no-repeat 161px 0;
+  padding: 21px 0 0 0;
+}
+
+#row2 .main2 {
+  background: url(/assets/img/row2-bg.gif) no-repeat 161px 0;
+  padding: 21px 0 24px 0;
+}
+
+#row2 .main3 {
+  background: url(/assets/img/row2-bg.gif) no-repeat 161px 0;
+  padding: 21px 0 24px 0;
+}
+
+#row2 #form i {
+  color: #00C2FF;
+  font-style: normal;
+}
+
+#row2 #form {
+  color: white;
+  width: 451px;
+}
+
+#row2 #form input,
+#row2 #form textarea,
+#row2 #form select {
+  background: #363636;
+  border: 1px solid #181818;
+  color: white;
+  font: normal normal normal 11px/normal Tahoma, Arial, helvetica, sans-serif;
+  text-align: left;
+  azimuthvertical-align: top;
+}
+
+#row2 #form input {
+  height: 19px;
+  margin-top: 2px;
+  width: 187px;
+}
+
+#row2 #form textarea {
+  height: 94px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2px;
+  width: 385px;
+}
+
+#row2 #form .submit_button {
+  background: url('/assets/img/submit.gif');
+  width: 113px;
+  height: 26px;
+  padding: 12px 0 0 12px;
+}
+
+#row2 #form .submit_button a {
+  color: #8e8e8e;
+}
+
+#row2 #form .submit_button a:hover {
+  text-decoration: none;
+}
+
+#row2 #form .box_1 {
+  height: 50px;
+  width: 201px;
+}

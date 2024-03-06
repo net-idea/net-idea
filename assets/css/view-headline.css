@@ -1,0 +1,117 @@
+/**
+ * HEADLINE
+ *
+ * Aussehen der Kopfzeile der Seite…
+ */
+
+#net-idea #headline p,
+#net-idea #headline label {
+  color: #ddd;
+}
+
+/**
+ * Spezielle Elemente ganz oben in der Seite…
+ */
+
+#net-idea #headline .spezial em {
+  font-style: normal;
+}
+
+#net-idea #headline .spezial .darker {
+  color: #545454;
+  font-style: normal;
+  font-size: 0.91em;
+}
+
+#net-idea #headline .spezial span.links {
+  float: right;
+  word-spacing: 13px;
+}
+
+#net-idea #headline .spezial span.links a {
+  color: #989898;
+  text-decoration: underline;
+  word-spacing: 0;
+}
+
+#net-idea #headline .spezial span.links a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Das Logo im Kopf der Seite als Überschrift der ersten Ordnung…
+ */
+
+#net-idea #headline div.logo h1 {
+  text-indent: -9999px;
+  margin: 0;
+  width: 380px;
+  height: 100px;
+  padding: 0;
+  background: transparent url(/assets/img/net-idea-logo-headline.png) scroll no-repeat center center;
+}
+
+/**
+ * Seiten Navigation innerhalb der Kopfzeile unterhalb des Logos…
+ */
+
+#net-idea #headline .navigation .text {
+  color: #808080;
+}
+
+#net-idea #headline .navigation a {
+  padding: 1px 2px 0 2px;
+  /* color: #6D7EB9; */
+  color: #ddd;
+  text-decoration: none;
+}
+
+#net-idea #headline .navigation a.home {
+  color: #999;
+  font-size: 15px;
+}
+
+#net-idea #headlineOLD .navigation a:link {
+  color: #6D7EB9;
+}
+
+#net-idea #headlineOLD .navigation a:visited {
+  color: #468F60;
+}
+
+#net-idea #headline .navigation a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#net-idea #headlineOLD .navigation a:active {
+  color: #FF0000;
+}
+
+#net-idea #headline .navigation img {
+  margin-right: 5px;
+}
+
+#net-idea #headline .navigation ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#net-idea #headline .navigation ul li {
+  display: inline;
+  color: #ccc;
+}
+
+#net-idea #headline .navigation ul li:before {
+  content: " | ";
+}
+
+#net-idea #headline .navigation ul li:first-child:before {
+  content: "";
+}
+
+#net-idea #headline .navigation ul li:first-child {
+  border-left: none;
+  padding-left: 0;
+}

@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+#net-idea div#header div#navigation ul {
+  margin: 0;
+  padding: 0;
+  width: 600px; /* Breitenangabe notwendig, damit die Liste nicht umgebrochen wird */
+  overflow: hidden;
+}
+
+#net-idea div#header div#navigation ul li {
+  list-style: none;
+  /* float left damit tabs nahtlos aneinander anschließen, was bei display inline nicht in allen browsern der fall ist */
+  float: left;
+  padding: 0;
+  margin: 0 3px 0 0;
+  width: 100px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #B9FDFF;
+}
+
+#net-idea div#header div#navigation ul li a {
+  display: block;
+  /* width: 100px; */
+  /* padding: 2px 0px 2px 0; */
+  color: #1C476B;
+  /* border: 1px solid #fff; */
+  /* border-bottom: #143D3C; */
+  /* background: url(../img/nav1-hg-up_02.png) repeat-x; */
+  /* prevents IE from changing tab-height */
+  line-height: 30px;
+  font-size: 16px;
+}
+
+#net-idea div#header div#navigation ul li a:hover {
+  color: #1A2729;
+  /* background: url(../img/nav1-hg-over.png) repeat-x; */
+  text-decoration: none;
+}
+
+/* mainNavigation1 */
+#mainNavigation1 {
+  position: absolute;
+  top: 102px;
+  left: 0;
+  z-index: 400;
+  text-align: center;
+}
+
+#mainNavigation1 ul {
+  margin: 0;
+  padding: 0;
+  /*breitenangabe notwendig damit die liste nicht umgebrochen wird */
+  width: 808px;
+  overflow: visible;
+}
+
+#mainNavigation1 ul li {
+  list-style: none;
+  /* float left damit tabs nahtlos aneinander anschließen, was bei display inline nicht in allen browsern der fall ist */
+  float: left;
+  padding: 0;
+  margin: 0 3px 0 0;
+}
+
+#mainNavigation1 ul li a {
+  display: block;
+  width: 110px;
+  padding: 2px 0px 2px 0;
+  color: #fff;
+  border: 1px solid #fff;
+  border-bottom: none;
+  background: url(/assets/img/nav1-hg-up_02.png) repeat-x;
+  /* prevents IE from changing tab-height */
+  line-height: 19px;
+  font-size: 12px;
+}
+
+#mainNavigation1 ul li a:hover {
+  color: black;
+  background: url(/assets/img/nav1-hg-over.png) repeat-x;
+  text-decoration: none;
+}
+
+#mainNavigation1 ul li.cur a {
+  background: #fff none;
+  color: black;
+}
+
+/* mainNavigation1 Level2 */
+#mainNavigation1 ul li ul {
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 300;
+}
+
+#mainNavigation1 ul li ul li {
+  list-style: none;
+  /* float left damit tabs nahtlos aneinander anschließen, was bei display inline nicht in allen browsern der fall ist */
+  float: left;
+  padding: 0;
+  margin: 0 18px 0 0;
+}
+
+#mainNavigation1 ul li ul li a {
+  width: auto !important;
+  display: block;
+  padding: 0 0 0 7px;
+  margin: 0;
+  color: #08c !important;
+  background: url(/assets/img/strich_blue.gif) no-repeat !important;
+  border: none;
+}
+
+#mainNavigation1 ul li ul li a:hover {
+  color: #000 !important;
+  background: url(/assets/img/strich_black.gif) no-repeat !important;
+}
+
+#mainNavigation1 ul li ul li.cur a {
+  color: #000 !important;
+  font-weight: bold;
+  background: url(/assets/img/strich_black_bold.gif) no-repeat !important;
+}
+
+/* mainNavigation2 */
+#mainNavigation2 {
+  position: relative;
+  z-index: 1500;
+  margin: 0;
+
+  padding: 0;
+  text-align: right;
+  font-size: 0.91em;
+  font-weight: bold;
+  float: right;
+  float: none;
+
+  height: 30px;
+  line-height: 1.65em;
+
+}
+
+
+#mainNavigation2 div {
+  display: inline;
+  margin-top: 0px;
+  background: url(/assets/img/head_waves_repeat_right-sp-v2.gif) repeat-x;
+  padding-bottom: 20px;
+  border-top: 1px solid black;
+
+
+}
+
+#mainNavigation2 div div {
+  display: inline;
+  border-top: none;
+}
+
+/*#mainNavigation2 div div {
+display:inline;
+margin-top:0px;
+padding-bottom:20px;
+
+border-bottom:0px solid black;
+
+	background: url(../img/_head_waves_repeat_right-sp-v2.gif) repeat-x;
+
+
+}
+*/
+/* only IE */
+* html #mainNavigation2 div {
+  /* Version 5.x +10 vom padding und +1 von border*
+  width: 365px;*/
+  /* Version 6+ *
+  w\idth: 354px;*/
+
+}
+
+
+#mainNavigation2 div a {
+  color: #fff;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-left: 1px solid #ddd;
+}
+
+* html #mainNavigation2 div a {
+  border-bottom: 2px solid black;
+}
+
+#mainNavigation2 div.act a {
+  color: #e80;
+  border-left: 1px solid #e80;
+}
+
+#mainNavigation2 div div img {
+  margin-top: 3px;
+
+}
+
+#mainNavigation2 div a.languageStart {
+  border-left: none;
+  padding-left: 4px;
+
+}
+
+#mainNavigation2 div a.languageStart img {
+
+}
+
+#mainNavigation2 div a.languageEnd {
+  border-left: none;
+}
+
+#mainNavigation2 div a.languageEnd img {
+}
+
+/*
+#
+#mainNavigation2 ul li.languageStart { padding: 0px 3px 0 5px; }
+#mainNavigation2 ul li.language { padding: 0 2px 0 2px; }
+#mainNavigation2 ul li.languageEnd { padding: 0px 2px 0 3px; }
+#mainNavigation2 ul li.languageStart a {
+	background-image: none;
+	padding-left: 0;
+}
+*/
+/* subNavigation1 */
+#subNavigation1 {
+  position: absolute;
+  top: 170px;
+  width: 150px;
+  padding: 3px 0 0 0;
+}
+
+#subNavigation1 ul, #subNavigation1 li {
+  margin: 0;
+  padding: 0;
+}
+
+#subNavigation1 li {
+  list-style: none;
+  /* display: inline notwendig, damit IE <= 6 die Zeilenhöhe in der Navigations-List richtig rendert (die anderen stört es nicht) */
+  display: inline;
+}
+
+#subNavigation1 li a {
+  color: #555;
+  padding-left: 5px;
+  background: url(/assets/img/mm-subnavi-arrow-gray-outline.gif) no-repeat;
+  display: block;
+  padding: 0 0 0 6px;
+  margin-bottom: 5px;
+}
+
+#subNavigation1 li a:hover {
+  color: #002;
+  background: url(/assets/img/mm-subnavi-arrow-black-outline.gif) no-repeat;
+  text-decoration: none;
+
+}
+
+#subNavigation1 li.cur {
+  margin: 1.7em 0 1.7em 0;
+  /* display: inline zurücksetzen, damit IE <= 6 die margins kapiert */
+  display: block;
+}
+
+#subNavigation1 li.firstMenuItem {
+  margin: 0 0 1.7em 0;
+}
+
+#subNavigation1 li#noSubPages {
+  margin: 0;
+}
+
+#subNavigation1 li.cur a {
+  color: #08c;
+  font-weight: bold;
+  background: url(/assets/img/mm-subnavi-arrow-blue-solid.gif) no-repeat;
+}
+
+#subNavigation1 li.hasSub a {
+  background: url(/assets/img/mm-subnavi-arrow-blue-solid-hasSub.gif) no-repeat;
+}
+
+#subNavigation1 li.isCur a, #subNavigation1 li.cur a:hover {
+  color: #000;
+  font-weight: bold;
+  background: url(/assets/img/mm-subnavi-arrow-black-solid.gif) no-repeat;
+}
+
+
+#subNavigation1 li.cur li a:hover {
+  font-weight: normal;
+}
+
+/*level2*/
+#subNavigation1 li.cur ul {
+  margin-left: 5px;
+}
+
+#subNavigation1 li.cur ul li {
+  padding-top: 0;
+  padding-bottom: 0;
+  /* display: inline notwendig, damit IE <= 6 die Zeilenhöhe in der Navigations-List richtig rendert (die anderen stört es nicht) */
+  display: inline;
+}
+
+#subNavigation1 li.cur ul li a, #subNavigation1 li.cur ul li a:hover {
+  background: url(/assets/img/mm-subnavi-arrow-blue-outline.gif) no-repeat;
+  font-weight: normal;
+  color: #08c;
+
+}
+
+#subNavigation1 li.cur ul li a:hover {
+  color: #000;
+  background: url(/assets/img/mm-subnavi-arrow-black-outline.gif) no-repeat;
+}
+
+#subNavigation1 li.cur ul li.cur a {
+  background: url(/assets/img/mm-subnavi-arrow-black-solid.gif) no-repeat;
+  padding-left: 6px;
+  color: #000;
+  font-weight: bold;
+
+}
+
+#subNavigation1 li.cur ul li.hasSub a {
+  background: url(/assets/img/mm-subnavi-arrow-black-solid-hasSub.gif) no-repeat;
+}
+
+/*3rd level*/
+#subNavigation1 li.cur ul li.cur ul li a {
+  background: url(/assets/img/mm-subnavi-arrow-blue-outline.gif) no-repeat;
+  color: #08c;
+  font-weight: normal;
+}
+
+#subNavigation1 li.cur ul li.cur ul li a:hover, #subNavigation1 li.cur ul li.cur ul li.cur a {
+  background: url(/assets/img/mm-subnavi-arrow-black-outline.gif) no-repeat;
+  color: #000;
+}

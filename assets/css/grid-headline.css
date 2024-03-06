@@ -1,0 +1,68 @@
+/**
+ * Bereiche zur Darstellung der Spezial Ellemente oberhalb der Seite...
+ */
+
+#net-idea #headline .spezial {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0; /* top right bottom left */
+  width: 950px; /* 960 - 30 - 30 */
+  height: 16px; /* 32 - 10 - 6 */
+  padding: 10px 0 6px 10px; /* top right bottom left */
+  color: #878787;
+  font-size: 0.91em;
+  /* background-color: orange; */
+}
+
+/**
+ * Bereich zur Darstellung des Logos im Kopf der Seite als Überschrift der ersten Ordnung...
+ */
+
+#net-idea #headline div.logo {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  margin: 0; /* top right bottom left */
+  width: 380px;
+  height: 100px;
+  padding: 0; /* top right bottom left */
+  font-weight: bold;
+  font-size: 16px;
+  /* line-height: 170px; */
+  text-align: left;
+  vertical-align: middle;
+  /* background-color: blue; */
+}
+
+#net-idea div#headlineOLD div.logo {
+  position: absolute;
+  /* float: left; */
+  width: 380px;
+  height: 100px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 24pt;
+  line-height: 100px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/**
+ * Bereich zur Darstellung der Seiten Navigation innerhalb der Kopfzeile unterhalb des Logos...
+ */
+
+#net-idea #headline .navigation {
+  position: absolute;
+  top: 132px;
+  left: 0px;
+  margin: 0; /* top right bottom left */
+  width: 920px; /* 960 - 2 * 20px */
+  height: 48px; /* 68 - 20 */
+  padding: 20px 20px 0 20px; /* top right bottom left */
+  color: #ddd;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: middle;
+  /* background-color: olive; */
+}

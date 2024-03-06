@@ -1,0 +1,353 @@
+/**
+ * 960GS
+ * container_[12,16]
+ * Aufteilung des Seitenkörpers in 12 und 16 Spalten…
+ */
+
+.container_12,
+.container_16 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* background-image: url(../img/workout-raster12-5p.png); */
+}
+
+.grid_1_half,
+.grid_2_half,
+.grid_3_half,
+.grid_4_half,
+.grid_5_half,
+.grid_6_half,
+.grid_7_half,
+.grid_8_half,
+.grid_9_half,
+.grid_10_half,
+.grid_11_half,
+.grid_12_half,
+.grid_13_half,
+.grid_14_half,
+.grid_15_half,
+.grid_16_half {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* background-image: url(../img/workout-raster12-5p.png); */
+}
+
+.grid_1_shape,
+.grid_2_shape,
+.grid_3_shape,
+.grid_4_shape,
+.grid_5_shape,
+.grid_6_shape,
+.grid_7_shape,
+.grid_8_shape,
+.grid_9_shape,
+.grid_10_shape,
+.grid_11_shape,
+.grid_12_shape,
+.grid_13_shape,
+.grid_14_shape,
+.grid_15_shape,
+.grid_16_shape {
+  float: left;
+  display: inline;
+  /* background-image: url(../img/workout-raster12-5p.png); */
+}
+
+
+/**
+ * container_[1..12] grid_[12/12]
+ * Deklaration der Spalten innerhalb des 12er Grids…
+ */
+
+.container_12 .grid_1 {
+  width: 60px;
+}
+
+/* 960 / 12 * 1 - (10 + 10) */
+.container_12 .grid_1_half {
+  width: 70px;
+}
+
+/* 960 / 12 * 1 - (5 + 5) */
+.container_12 .grid_1_shape {
+  width: 80px;
+}
+
+/* 960 / 12 * 1 */
+.container_12 .grid_2 {
+  width: 140px;
+}
+
+/* 960 / 12 * 2 - (10 + 10) */
+.container_12 .grid_2_half {
+  width: 150px;
+}
+
+/* 960 / 12 * 2 - (5 + 5) */
+.container_12 .grid_2_shape {
+  width: 160px;
+}
+
+/* 960 / 12 * 2 */
+.container_12 .grid_3 {
+  width: 220px;
+}
+
+/* 960 / 12 * 3 - (10 + 10) */
+.container_12 .grid_3_half {
+  width: 230px;
+}
+
+/* 960 / 12 * 3 - (5 + 5) */
+.container_12 .grid_3_shape {
+  width: 240px;
+}
+
+/* 960 / 12 * 3 */
+.container_12 .grid_4 {
+  width: 300px;
+}
+
+/* 960 / 12 * 4 - (10 + 10) */
+.container_12 .grid_4_half {
+  width: 310px;
+}
+
+/* 960 / 12 * 4 - (5 + 5) */
+.container_12 .grid_4_shape {
+  width: 320px;
+}
+
+/* 960 / 12 * 4 */
+.container_12 .grid_5 {
+  width: 380px;
+}
+
+/* 960 / 12 * 5 - (10 + 10) */
+.container_12 .grid_5_half {
+  width: 390px;
+}
+
+/* 960 / 12 * 5 - (5 + 5) */
+.container_12 .grid_5_shape {
+  width: 400px;
+}
+
+/* 960 / 12 * 5 */
+.container_12 .grid_6 {
+  width: 460px;
+}
+
+/* 960 / 12 * 6 - (10 + 10) */
+.container_12 .grid_6_half {
+  width: 470px;
+}
+
+/* 960 / 12 * 6 - (5 + 5) */
+.container_12 .grid_6_shape {
+  width: 480px;
+}
+
+/* 960 / 12 * 6 */
+.container_12 .grid_7 {
+  width: 540px;
+}
+
+/* 960 / 12 * 7 - (10 + 10) */
+.container_12 .grid_7_half {
+  width: 550px;
+}
+
+/* 960 / 12 * 7 - (5 + 5) */
+.container_12 .grid_7_shape {
+  width: 560px;
+}
+
+/* 960 / 12 * 7 */
+.container_12 .grid_8 {
+  width: 620px;
+}
+
+/* 960 / 12 * 8 - (10 + 10) */
+.container_12 .grid_8_half {
+  width: 630px;
+}
+
+/* 960 / 12 * 8 - (5 + 5) */
+.container_12 .grid_8_shape {
+  width: 620px;
+}
+
+/* 960 / 12 * 8 */
+.container_12 .grid_9 {
+  width: 700px;
+}
+
+/* 960 / 12 * 9 - (10 + 10) */
+.container_12 .grid_9_half {
+  width: 710px;
+}
+
+/* 960 / 12 * 9 - (5 + 5) */
+.container_12 .grid_9_shape {
+  width: 720px;
+}
+
+/* 960 / 12 * 3 */
+.container_12 .grid_10 {
+  width: 780px;
+}
+
+/* 960 / 12 * 10 - (10 + 10) */
+.container_12 .grid_10_half {
+  width: 790px;
+}
+
+/* 960 / 12 * 10 - (5 + 5) */
+.container_12 .grid_10_shape {
+  width: 800px;
+}
+
+/* 960 / 12 * 10 */
+.container_12 .grid_11 {
+  width: 860px;
+}
+
+/* 960 / 12 * 11 - (10 + 10) */
+.container_12 .grid_11_half {
+  width: 870px;
+}
+
+/* 960 / 12 * 11 - (5 + 5) */
+.container_12 .grid_11_shape {
+  width: 880px;
+}
+
+/* 960 / 12 * 11 */
+.container_12 .grid_12 {
+  width: 940px;
+}
+
+/* 960 / 12 * 12 - (10 + 10) */
+.container_12 .grid_12_half {
+  width: 950px;
+}
+
+/* 960 / 12 * 12 - (5 + 5) */
+.container_12 .grid_12_shape {
+  width: 960px;
+}
+
+/* 960 / 12 * 12 */
+
+
+/**
+ * container_[1..16] grid_[16/16]
+ * Deklaration der Spalten innerhalb des 16er Grids…
+ */
+
+.container_16 .grid_1 {
+  width: 40px;
+}
+
+/* 960 / 16 * 1 - (10 + 10) */
+.container_16 .grid_2 {
+  width: 100px;
+}
+
+/* 960 / 16 * 2 - (10 + 10) */
+.container_16 .grid_3 {
+  width: 160px;
+}
+
+/* 960 / 16 * 3 - (10 + 10) */
+.container_16 .grid_4 {
+  width: 220px;
+}
+
+/* 960 / 16 * 4 - (10 + 10) */
+.container_16 .grid_5 {
+  width: 280px;
+}
+
+/* 960 / 16 * 5 - (10 + 10) */
+.container_16 .grid_6 {
+  width: 340px;
+}
+
+/* 960 / 16 * 6 - (10 + 10) */
+.container_16 .grid_7 {
+  width: 400px;
+}
+
+/* 960 / 16 * 7 - (10 + 10) */
+.container_16 .grid_8 {
+  width: 460px;
+}
+
+/* 960 / 16 * 8 - (10 + 10) */
+.container_16 .grid_9 {
+  width: 520px;
+}
+
+/* 960 / 16 * 9 - (10 + 10) */
+.container_16 .grid_10 {
+  width: 580px;
+}
+
+/* 960 / 16 * 10 - (10 + 10) */
+.container_16 .grid_11 {
+  width: 640px;
+}
+
+/* 960 / 16 * 11 - (10 + 10) */
+.container_16 .grid_12 {
+  width: 700px;
+}
+
+/* 960 / 16 * 12 - (10 + 10) */
+.container_16 .grid_13 {
+  width: 760px;
+}
+
+/* 960 / 16 * 13 - (10 + 10) */
+.container_16 .grid_14 {
+  width: 820px;
+}
+
+/* 960 / 16 * 14 - (10 + 10) */
+.container_16 .grid_15 {
+  width: 880px;
+}
+
+/* 960 / 16 * 15 - (10 + 10) */
+.container_16 .grid_16 {
+  width: 940px;
+}
+
+/* 960 / 16 * 16 - (10 + 10) */

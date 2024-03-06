@@ -1,0 +1,389 @@
+/**
+ * BOX WHITE
+ */
+
+/**
+ * Headline, ein Kopfzeile der Box, die auch Inhalt enthalten kann…
+ */
+
+.box_white .box_white_headline_left {
+  margin: 0 28px 10px 0; /* top right bottom left */
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-headline-left.png) no-repeat left top;
+}
+
+* html .box_white .box_white_headline_left {
+  background-image: url(/assets/img/box-white-headline-left.gif);
+}
+
+.box_white:hover .box_white_headline_left {
+  background-image: url(/assets/img/box-white-headline-left-hover.png);
+}
+
+* html .box_white:hover .box_white_headline_left {
+  background-image: url(/assets/img/box-white-headline-left-hover.gif);
+}
+
+.box_white .box_white_headline_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-headline-right.png) no-repeat right top;
+}
+
+* html .box_white .box_white_headline_right {
+  background-image: url(/assets/img/box-white-headline-right.gif);
+}
+
+.box_white:hover .box_white_headline_right {
+  background-image: url(/assets/img/box-white-headline-right-hover.png);
+}
+
+* html .box_white:hover .box_white_headline_right {
+  background-image: url(/assets/img/box-white-headline-right-hover.gif);
+}
+
+.box_white .box_white_headline {
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-headline.png) repeat-x left top;
+  /* display: table-cell; */
+  /* vertical-align:middle; */
+}
+
+* html .box_white .box_white_headline {
+  background-image: url(/assets/img/box-white-headline.gif);
+}
+
+.box_white:hover .box_white_headline {
+  background-image: url(/assets/img/box-white-headline-hover.png);
+}
+
+* html .box_white:hover .box_white_headline {
+  background-image: url(/assets/img/box-white-headline-hover.gif);
+}
+
+/**
+ * Interline, eine Zwischenkopfzeile der Box
+ */
+
+.box_white .box_white_interline_left {
+  margin: -10px 28px 10px 0; /* top right bottom left */
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-interline-left.png) no-repeat left top;
+}
+
+* html .box_white .box_white_interline_left {
+  background-image: url(/assets/img/box-white-interline-left.gif);
+}
+
+.box_white:hover .box_white_interline_left {
+  background-image: url(/assets/img/box-white-interline-left-hover.png);
+}
+
+* html .box_white:hover .box_white_interline_left {
+  background-image: url(/assets/img/box-white-interline-left-hover.gif);
+}
+
+.box_white .box_white_interline_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-interline-right.png) no-repeat right top;
+}
+
+* html .box_white .box_white_interline_right {
+  background-image: url(/assets/img/box-white-interline-right.gif);
+}
+
+.box_white:hover .box_white_interline_right {
+  background-image: url(/assets/img/box-white-interline-right-hover.png);
+}
+
+* html .box_white:hover .box_white_interline_right {
+  background-image: url(/assets/img/box-white-interline-right-hover.gif);
+}
+
+.box_white .box_white_interline {
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-interline.png) repeat-x left top;
+}
+
+* html .box_white .box_white_interline {
+  background-image: url(/assets/img/box-white-interline.gif);
+}
+
+.box_white:hover .box_white_interline {
+  background-image: url(/assets/img/box-white-interline-hover.png);
+}
+
+* html .box_white:hover .box_white_interline {
+  background-image: url(/assets/img/box-white-interline-hover.gif);
+}
+
+/**
+ * Footer, der Abschluß der Box mit möglichem Inhalt…
+ */
+
+.box_white .box_white_footer_left {
+  margin: -10px 28px 10px 0; /* top right bottom left */
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-footer-left.png) no-repeat left top;
+  background: transparent url(/assets/img/box-white-footer-left.gif) no-repeat left top;
+}
+
+* html .box_white .box_white_footer_left {
+  background-image: url(/assets/img/box-white-footer-left.gif);
+}
+
+.box_white:hover .box_white_footer_left {
+  background-image: url(/assets/img/box-white-footer-left-hover.png);
+}
+
+* html .box_white:hover .box_white_footer_left {
+  background-image: url(/assets/img/box-white-footer-left-hover.gif);
+}
+
+.box_white .box_white_footer_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-footer-right.png) no-repeat right top;
+  background: transparent url(/assets/img/box-white-footer-right.gif) no-repeat right top;
+}
+
+* html .box_white .box_white_footer_right {
+  background-image: url(/assets/img/box-white-footer-right.gif);
+}
+
+.box_white:hover .box_white_footer_right {
+  background-image: url(/assets/img/box-white-footer-right-hover.png);
+}
+
+* html .box_white:hover .box_white_footer_right {
+  background-image: url(/assets/img/box-white-footer-right-hover.gif);
+}
+
+.box_white .box_white_footer {
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  height: 30px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-footer.png) repeat-x left top;
+}
+
+* html .box_white .box_white_footer {
+  background-image: url(/assets/img/box-white-footer.gif);
+}
+
+.box_white:hover .box_white_footer {
+  background-image: url(/assets/img/box-white-footer-hover.png);
+}
+
+* html .box_white:hover .box_white_footer {
+  background-image: url(/assets/img/box-white-footer-hover.gif);
+}
+
+/**
+ * Top, der obere Bereich der Box ohne Überschrift…
+ */
+
+.box_white .box_white_top_left {
+  margin: 0 28px 10px 0; /* top right bottom left */
+  height: 14px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-top-left.png) no-repeat left bottom;
+}
+
+* html .box_white .box_white_top_left {
+  background-image: url(/assets/img/box-white-top-left.gif);
+}
+
+.box_white:hover .box_white_top_left {
+  background-image: url(/assets/img/box-white-top-left-hover.png);
+}
+
+* html .box_white:hover .box_white_top_left {
+  background-image: url(/assets/img/box-white-top-left-hover.gif);
+}
+
+.box_white .box_white_top_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  height: 14px;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-top-right.png) no-repeat right bottom;
+}
+
+* html .box_white .box_white_top_right {
+  background-image: url(/assets/img/box-white-top-right.gif);
+}
+
+.box_white:hover .box_white_top_right {
+  background-image: url(/assets/img/box-white-top-right-hover.png);
+}
+
+* html .box_white:hover .box_white_top_right {
+  background-image: url(/assets/img/box-white-top-right-hover.gif);
+}
+
+.box_white .box_white_top {
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  height: 14px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-top.png) repeat-x left bottom;
+}
+
+* html .box_white .box_white_top {
+  background-image: url(/assets/img/box-white-top.gif);
+}
+
+.box_white:hover .box_white_top {
+  background-image: url(/assets/img/box-white-top-hover.png);
+}
+
+* html .box_white:hover .box_white_top {
+  background-image: url(/assets/img/box-white-top-hover.gif);
+}
+
+
+/**
+ * Body, der eigentliche Körper der Box…
+ */
+
+.box_white .box_white_body_left {
+  margin: -10px 28px 10px 0; /* top right bottom left */
+  padding: 0; /* top right bottom left */
+  background: url(/assets/img/box-white-body-left.png) repeat-y left top;
+}
+
+* html .box_white .box_white_body_left {
+  background-image: url(/assets/img/box-white-body-left.gif);
+}
+
+.box_white:hover .box_white_body_left {
+  background-image: url(/assets/img/box-white-body-left-hover.png);
+}
+
+* html .box_white:hover .box_white_body_left {
+  background-image: url(/assets/img/box-white-body-left-hover.gif);
+}
+
+.box_white .box_white_body_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-body-right.png) repeat-y right top;
+}
+
+* html .box_white .box_white_body_right {
+  background-image: url(/assets/img/box-white-body-right.gif);
+}
+
+.box_white:hover .box_white_body_right {
+  background-image: url(/assets/img/box-white-body-right-hover.png);
+}
+
+* html .box_white:hover .box_white_body_right {
+  background-image: url(/assets/img/box-white-body-right-hover.gif);
+}
+
+.box_white .box_white_body {
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-body.png) repeat left top;
+}
+
+* html .box_white .box_white_body {
+  background-image: url(/assets/img/box-white-body.gif);
+}
+
+.box_white:hover .box_white_body {
+  background-image: url(/assets/img/box-white-body-hover.png);
+}
+
+* html .box_white:hover .box_white_body {
+  background-image: url(/assets/img/box-white-body-hover.gif);
+}
+
+/**
+ * Bottom, der Abschluß der Box ohne Inhalt…
+ */
+
+.box_white .box_white_bottom_left {
+  margin: -10px 28px 0 0; /* top right bottom left */
+  height: 14px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-bottom-left.png) no-repeat left top;
+}
+
+* html .box_white .box_white_bottom_left {
+  background-image: url(/assets/img/box-white-bottom-left.gif);
+}
+
+.box_white:hover .box_white_bottom_left {
+  background-image: url(/assets/img/box-white-bottom-left-hover.png);
+}
+
+* html .box_white:hover .box_white_bottom_left {
+  background-image: url(/assets/img/box-white-bottom-left-hover.gif);
+}
+
+.box_white .box_white_bottom_right {
+  margin: 0 0 0 14px; /* top right bottom left */
+  width: 100%;
+  height: 14px;
+  padding: 0 14px 0 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-bottom-right.png) no-repeat right top;
+}
+
+* html .box_white .box_white_bottom_right {
+  background-image: url(/assets/img/box-white-bottom-right.gif);
+}
+
+.box_white:hover .box_white_bottom_right {
+  background-image: url(/assets/img/box-white-bottom-right-hover.png);
+}
+
+* html .box_white:hover .box_white_bottom_right {
+  background-image: url(/assets/img/box-white-bottom-right-hover.gif);
+}
+
+.box_white .box_white_bottom {
+  margin: 0; /* top right bottom left */
+  width: 100%;
+  height: 14px;
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/box-white-bottom.png) repeat-x left top;
+}
+
+* html .box_white .box_white_bottom {
+  background-image: url(/assets/img/box-white-bottom.gif);
+}
+
+.box_white:hover .box_white_bottom {
+  background-image: url(/assets/img/box-white-bottom-hover.png);
+}
+
+* html .box_white:hover .box_white_bottom {
+  background-image: url(/assets/img/box-white-bottom-hover.gif);
+}

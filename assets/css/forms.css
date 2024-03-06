@@ -1,0 +1,604 @@
+#net-idea form.pagebeam {
+  margin: 0;
+  padding: 0;
+}
+
+#net-idea form.pagebeam fieldset.framed {
+  border: 1px solid #bbb;
+  padding: 0 5px 5px 5px; /* top right bottom left */
+}
+
+#net-idea form.pagebeam fieldset.framed:hover {
+  border-color: #999;
+}
+
+#net-idea form.pagebeam fieldset.framed:focus {
+  border-color: #666;
+}
+
+#net-idea form.pagebeam legend {
+  /* margin: 0; */
+  /* padding: 0.5em 0.25em; top right bottom left */
+  margin-bottom: 10pt; /* top right bottom left */
+  text-align: left;
+  /* font-family: "Bitstream Vera Serif", verase, palatino, Georgia, "Times New Roman", Times, serif; */
+  /* font-weight: bold; */
+  /* font-size: 1.2em; */
+  /* color: #666; */
+}
+
+#net-idea form.pagebeam dl {
+  clear: both;
+}
+
+#net-idea form.pagebeam dt {
+  float: left;
+  margin: 0 5px 1px 0; /* top right bottom left */
+  padding-top: 2px; /* top right bottom left */
+  width: 100px;
+  text-align: right;
+  /* color: #666; */
+  /* line-height: 25px; */
+}
+
+#net-idea form.pagebeam dd {
+  float: left;
+  margin: 0 0 1px 0; /* top right bottom left */
+  width: auto;
+  text-align: left;
+  /* line-height: 25px; */
+}
+
+#net-idea form.pagebeam label {
+  padding: 0; /* top right bottom left */
+}
+
+#net-idea form.pagebeam label.mandatory {
+  font-weight: bold;
+}
+
+#net-idea form.pagebeam .fields label {
+  float: left;
+  padding: 0 3px 0 0;
+  /* font-size:11px; */
+}
+
+#net-idea form.pagebeam .multiField {
+  float: left;
+  padding: 0 3px 0 0;
+}
+
+/*
+ * pagebeam inputs :: Die Eingabefelder mit Textinhalt innerhalb der pagebeam Formulare.
+ */
+
+#net-idea form.pagebeam input[type=text],
+#net-idea form.pagebeam input[type=password],
+#net-idea form.pagebeam select,
+#net-idea form.pagebeam textarea {
+  visibility: visible; /* benötigt wegen ExtJS */
+  border: 1px solid #bbb;
+  padding: 1px 1px 1px 1px; /* oben rechts unten links */
+  color: #444;
+  /* font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif; */
+  font: normal normal normal 10pt/12pt arial, sans-serif;
+  background-color: #fff;
+}
+
+* + html #net-idea form.pagebeam input[type=password] {
+  font-family: arial, sans-serif;
+}
+
+#net-idea form.pagebeam textarea {
+  /* font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif; */
+  font: normal normal normal 10pt/12pt arial, sans-serif;
+}
+
+#net-idea form.pagebeam select {
+  /* font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif; */
+  font: normal normal normal 10pt/12pt arial, sans-serif;
+}
+
+#net-idea form.pagebeam input[type=text]:hover,
+#net-idea form.pagebeam input[type=password]:hover,
+#net-idea form.pagebeam select:hover,
+#net-idea form.pagebeam textarea:hover {
+  border-color: #222;
+  color: #222;
+}
+
+#net-idea form.pagebeam input[type=text]:focus,
+#net-idea form.pagebeam input[type=password]:focus,
+#net-idea form.pagebeam select:focus,
+#net-idea form.pagebeam textarea:focus {
+  border-color: #666;
+  color: #222;
+}
+
+#net-idea form.pagebeam input[type=button],
+#net-idea form.pagebeam input[type=submit] {
+  border: 1px solid #bbb;
+  padding: 0 2px 0 2px; /* oben rechts unten links */
+  color: #666;
+  /* font: 1.0em/1.0em "Bitstream Vera Sans Mono", VeraMono, "Lucida Console", lucon, "Courier New", Courier, mono; */
+  /* font-weight: bold; */
+  background-color: #fff;
+}
+
+#net-idea form.pagebeam input[type=submit].prominent {
+  color: white;
+  font-size: 12pt;
+  font-weight: bold;
+  background-color: green;
+}
+
+#net-idea form.pagebeam input[type=button]:hover,
+#net-idea form.pagebeam input[type=submit]:hover {
+  border-color: #222;
+  color: #222;
+}
+
+#net-idea form.pagebeam input[type=button]:focus,
+#net-idea form.pagebeam input[type=submit]:focus {
+  /* display: none; */
+  background-color: green;
+}
+
+/* error :: Eingabefelder im Zusammenhang mit Fehlern */
+
+#net-idea form.pagebeam .error input[type=text],
+#net-idea form.pagebeam .error input[type=password],
+#net-idea form.pagebeam .error select,
+#net-idea form.pagebeam .error textarea {
+  border: 1px solid red;
+}
+
+/* Formulare im inaktivem Kontext (z.B. innerhalb der Adress Eingabe) */
+
+#net-idea .inactive .req {
+  color: #f2f2f2;
+  font-weight: normal;
+}
+
+#net-idea form.pagebeam .inactive label {
+  color: #ccc;
+}
+
+#net-idea form.pagebeam .inactive input[type=text],
+#net-idea form.pagebeam .inactive input[type=password],
+#net-idea form.pagebeam .inactive select,
+#net-idea form.pagebeam .inactive textarea {
+  visibility: visible; /* benötigt wegen ExtJS */
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 1px; /* oben rechts unten links */
+  color: #ccc;
+  /* font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif; */
+  font: normal normal normal 10pt/12pt arial, sans-serif;
+  background-color: #fff;
+}
+
+#net-idea form.pagebeam .inactive input[type=text]:hover,
+#net-idea form.pagebeam .inactive input[type=password]:hover,
+#net-idea form.pagebeam .inactive select:hover,
+#net-idea form.pagebeam .inactive textarea:hover {
+  border-color: #ccc;
+}
+
+#net-idea form.pagebeam .inactive input[type=text]:focus,
+#net-idea form.pagebeam .inactive input[type=password]:focus,
+#net-idea form.pagebeam .inactive select:focus,
+#net-idea form.pagebeam .inactive textarea:focus {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+/* Den Submit als Link darstellen... */
+
+#net-idea form.pagebeam input.link,
+#net-idea button.link,
+#net-idea button.link:focus {
+  cursor: pointer;
+  border: 0 none;
+  /* padding: 4px 1px 6px 15px; top right bottom left */
+  padding: 0; /* top right bottom left */
+  line-height: 1.1em;
+  vertical-align: middle;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #000064;
+  /* font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif; */
+  /* font: normal normal normal 10pt/12pt arial, sans-serif; */
+  background-color: transparent;
+}
+
+#net-idea form.pagebeam input.link:hover,
+#net-idea button.link:hover {
+  border: 0 none;
+  color: #0E3B57;
+  text-decoration: underline;
+}
+
+
+#net-idea form.pagebeam input.linkALT {
+  border: 0 none;
+  padding: 0; /* top right bottom left */
+  color: #000064;
+  font: normal normal normal 10pt/12pt "bitstream vera sans", "trebuchet ms", verdana, tahoma, arial, sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#net-idea form.pagebeam input.linkALT:hover,
+#net-idea form.pagebeam input.linkALT:focus {
+  border-bottom: 1px solid #0E3B57;
+  color: #0E3B57;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* form.pb label :: form.pb Formular-Feld Bezeichungen */
+
+#net-idea form.pb label {
+  padding: 0px;
+  /* display: block; */
+}
+
+#net-idea form.pb label label {
+  /* font-size: 100%; */
+  color: #444;
+  float: right;
+}
+
+#net-idea form.pb table.set td.fields label {
+  padding: 0px 3px 0px 0px; /* oben rechts unten links */
+  font-size: 11px;
+  color: #666666;
+  float: left;
+}
+
+/* #net-idea form.pb .clinch {
+	padding: 0px;
+	text-align: left;
+	vertical-align: middle;
+	border: 0px none;
+} */
+
+#net-idea form.pb label br {
+  clear: left;
+}
+
+/* pagebeam form :: Aussehen von Formularen und deren Eingeabefeldern. */
+
+#net-idea form.pb fieldset {
+  margin: 0px 10pt 10pt 10pt; /* top right bottom left */
+  padding: 5px;
+  border: 1px solid #888;
+}
+
+#net-idea form.pb fieldset legend {
+  padding: 5px;
+  color: #444;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* form.pb_inputs ::  Eingabefelder des form.pb */
+
+#net-idea form.pb input[type=text],
+#net-idea form.pb select,
+#net-idea form.pb textarea {
+  padding: 1px 1px 1px 1px; /* oben rechts unten links */
+  border: 1px solid #92a5a1;
+  border-left: 3px solid #92a5a1;
+  /* font-family: "Bitstream Vera Sans Mono", veramo, "Lucida Console", lucon, "Courier New", Courier, monospace, fixed; */
+  /* font-size: 11px; */
+  font: 11px "Bitstream Vera Sans Mono", VeraMono, "Lucida Console", lucon, "Courier New", Courier, mono;
+  color: #686c71;
+  font-weight: normal;
+  background-color: #d1f6e9;
+}
+
+#net-idea form.pb select {
+  font-weight: normal;
+  padding: 0;
+}
+
+#net-idea form.pb input[type=text]:hover,
+#net-idea form.pb select:hover,
+#net-idea form.pb textarea:hover {
+  color: #4b5558;
+  border-color: #435f58;
+  background-color: #c8f4e4;
+}
+
+#net-idea form.pb input[type=text]:focus,
+#net-idea form.pb select:focus,
+#net-idea form.pb textarea:focus {
+  color: #2f393d;
+  border-color: #21443c;
+  background-color: #aeefd8;
+}
+
+/* select an his option */
+
+#net-idea form.pb select optgroup {
+  /* padding: 0 10px 0 1px; oben rechts unten links */
+  padding: 0px 0px 0px 5px; /* oben rechts unten links */
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  /* text-decoration: underline;	font: normal; */
+  background-color: #858585;
+}
+
+#net-idea form.pb select option {
+  padding: 0 10px 0 1px; /* oben rechts unten links */
+  color: #2f393d;
+  font-weight: normal;
+  background-color: #e9e9e9;
+}
+
+/* mandatory form.pb inputs */
+
+#net-idea form.pb input[type=text].mandatory,
+#net-idea form.pb select.mandatory,
+#net-idea form.pb textarea.mandatory {
+  color: #687168;
+  border-left-width: 6px;
+  border-color: #a4c8ac;
+  background-color: #daf8e3;
+}
+
+#net-idea form.pb input[type=text].mandatory:hover,
+#net-idea form.pb select.mandatory:hover,
+#net-idea form.pb textarea.mandatory:hover {
+  color: #4b5a4b;
+  border-color: #849a89;
+  background-color: #c8f4d5;
+}
+
+#net-idea form.pb input[type=text].mandatory:focus,
+#net-idea form.pb select.mandatory:focus,
+#net-idea form.pb textarea.mandatory:focus {
+  color: #273426;
+  border-color: #1b732f;
+  background-color: #aeefc2;
+}
+
+#net-idea form.pb label.mandatory {
+  color: #273426;
+  font-weight: bold;
+}
+
+#net-idea form.pb input[type=text].mandatory,
+#net-idea form.pb select.mandatory,
+#net-idea form.pb textarea.mandatory {
+  color: #687168;
+  border-left-width: 6px;
+  border-color: #a4c8ac;
+  background-color: #daf8e3;
+}
+
+#net-idea form.pb input[type=text].transparent,
+#net-idea form.pb textarea.transparent {
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* form.pb inputs in case of error */
+
+#net-idea form.pb .error input[type=text].mandatory,
+#net-idea form.pb .error select.mandatory,
+#net-idea form.pb .error textarea.mandatory {
+  color: #886c57;
+  border-color: #f19665;
+  background-color: #fff2ef;
+}
+
+#net-idea form.pb .error input[type=text].mandatory:hover,
+#net-idea form.pb .error select.mandatory:hover,
+#net-idea form.pb .error textarea.mandatory:hover {
+  color: #6f5338;
+  border-color: #d44a00;
+  background-color: #fee6db;
+}
+
+#net-idea form.pb .error input[type=text].mandatory:focus,
+#net-idea form.pb .error select.mandatory:focus,
+#net-idea form.pb .error textarea.mandatory:focus {
+  color: #552c0f;
+  border-color: #dc0a00;
+  background-color: #ffeae6;
+}
+
+#net-idea form.pb .error label.mandatory,
+#net-idea form.pb label.error {
+  color: #dd1100;
+  /* font-weight: 900; */
+  font-weight: bold;
+}
+
+/* final form.pb buttons */
+
+#net-idea form.pb input[type=button],
+#net-idea form.pb input[type=submit] {
+  padding: 0 2px 0 2px; /* oben rechts unten links */
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#net-idea form.pb input[type=button],
+#net-idea form.pb input[type=submit] {
+  /* width: 100%; */
+  /* padding: 0 2px 0 2px; oben rechts unten links */
+  /* font: 11px "Bitstream Vera Sans Mono", VeraMono, "Lucida Console", lucon, "Courier New", Courier, mono; */
+  color: #e9e9e9;
+  border: 1px solid #8a8a8a;
+  background: #6485a9;
+}
+
+#net-idea form.pb input[type=button]:hover,
+#net-idea form.pb input[type=submit]:hover {
+  color: #ffffff;
+  background: #4b8d6e;
+  border-color: #606060;
+  /* cursor: pointer;  sorry, can't use that one in front of Opera */
+}
+
+#net-idea form.pb input[type=button]:focus,
+#net-idea form.pb input[type=submit]:focus {
+  color: #ffffff;
+  background: #329633;
+  border-color: #393939;
+  /* cursor: pointer;  sorry, can't use that one in front of Opera */
+}
+
+/* image buttons ohne style */
+
+#net-idea form.pb input[type=image] {
+  border-style: none;
+  border-width: 0;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* Ausnahmen */
+
+#net-idea form.pb .hidden {
+  /* width: 100%; */
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* Aussenstehende Elemente */
+
+#net-idea form.pb textarea#helpbox {
+  width: 100%;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#net-idea form.pb #helpbox {
+  /* width: 100%; */
+  /* width: 50%; */
+  /* hight: 100%; */
+  /* float: left; */
+  /* position: relativ; */
+  /* display: run-in; */
+  /* display: block; */
+  /* overflow: hidden; */
+  /* position: relative; */
+  /* border: 3px solid #999; */
+}
+
+#net-idea form.pb .help {
+  font-size: 10px;
+  /* line-height: 9px; */
+  color: #888;
+}
+
+#net-idea form.pb #helpbox {
+  font-size: 13px;
+  /* line-height: 9px; */
+  color: #888;
+}
+
+#net-idea form.pb .comment {
+  font-size: 11px;
+  /* line-height: 9px; */
+  color: #888;
+}
+
+#net-idea .inputfield {
+  /* padding: 2px; top right bottom left */
+  font-size: 11px;
+  color: #003c6a;
+  border: 1px solid #bebebe;
+}
+
+#net-idea .inputfield:hover {
+  color: #003c6a;
+  border-color: #8b8b8b;
+}
+
+#net-idea .inputfield:focus {
+  color: #003c6a;
+  border-color: #3f2c2c;
+}
+
+#net-idea .inputfield-error {
+  font-size: 11px;
+  color: #003c6a;
+  border: 1px solid #FF0000;
+}
+
+#net-idea .inputfield-error:hover {
+  color: #6f5338;
+  border-color: #dc491b;
+}
+
+#net-idea .inputfield-error:focus {
+  color: #552c0f;
+  border-color: #e98311;
+}
+
+/*
+ * Authentication
+ */
+
+#net-idea form.pagebeam .formInputFull {
+  float: left;
+  margin-bottom: 5px;
+  width: 320px;
+  /* background-color: orange; */
+}
+
+#net-idea form.pagebeam .formFootnote {
+  color: #707173;
+  font-size: 8pt;
+}
+
+#net-idea form.pagebeam .formInputFull input[type="text"] {
+  width: 276px;
+}
+
+#net-idea form.pagebeam .formInputFull select {
+  width: 280px;
+}
+
+#net-idea form.pagebeam .formInputStreet {
+  margin-right: 10px;
+  width: 190px;
+}
+
+#net-idea form.pagebeam .formInputStreet input[type="text"] {
+  width: 186px;
+}
+
+#net-idea form.pagebeam .formInputHousenumber {
+  width: 80px;
+}
+
+#net-idea form.pagebeam .formInputHousenumber input[type="text"] {
+  width: 76px;
+}
+
+#net-idea form.pagebeam .formInputZip {
+  margin-right: 10px;
+  width: 80px;
+}
+
+#net-idea form.pagebeam .formInputZip input[type="text"] {
+  width: 76px;
+}
+
+#net-idea form.pagebeam .formInputCity {
+  width: 190px;
+}
+
+#net-idea form.pagebeam .formInputCity input[type="text"] {
+  width: 186px;
+}

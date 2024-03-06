@@ -1,0 +1,110 @@
+/**
+ * HTML BODY
+ *
+ * Definition der Grundfläche des Seitenkörpers für alle standardkonformen Browser.
+ */
+
+html, body {
+  margin: 0; /* top right bottom left */
+  padding: 0; /* top right bottom left */
+  width: 100%;
+  /* height: 100%; */
+  /* height: 100% - 180px; */
+  text-align: center;
+}
+
+* html, * html body {
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+body {
+  overflow: scroll;
+}
+
+#net-idea {
+  font: normal normal normal 0.75em/1.375em "Bitstream Vera Sans", Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  background: #fff url(/assets/img/background-transition.png) scroll repeat-x center top;
+}
+
+/**
+ * HEADLINE
+ *
+ * Definition der Fläche zur Anzeige der Kopfzeile und aller Elemente innerhalb der Kopfzeile wie z.B. des Logos, den
+ * Bereichen für den Login, dem Warenkorb, dem Feld zur Eingabe und Ausführen der Suche und der Navigation.
+ */
+
+#net-idea div#headline {
+  /* position: fixed; */
+  /* position: fixed; */
+  /* top: 0px; left: 0px; right: 0px; */
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  text-align: center;
+  background: transparent url(/assets/img/background-headline.png) scroll no-repeat bottom center;
+}
+
+#net-idea div#headline div.headline {
+  position: relative;
+  margin: 0 auto; /* top right bottom left :: standardkonforme horizontale Zentrierung */
+  padding: 0; /* top right bottom left */
+  width: 960px;
+  height: 200px;
+  text-align: left;
+}
+
+/**
+ * BODY
+ *
+ * Der richtige Körper der Seite mit Inhalt und ist scrollbarer.
+ * Die Kopfzeile steht fest, daher ist es erforderlich, dass ein Abstand den Inhalt um die Höhe der Kopfzeile nach unten
+ * drückt.
+ * Im IE werden die Margins nicht richtige interpretiert, dacher bietet es sich an, dass der Abstand mir inneren Paddings
+ * realisiert wird. Dies jedoch macht die Transperenz im Äusseren der Kopfzeile unmöglich.
+ *
+ * Elemente innerhalb des eigentlichen Seitenkörpers mit einer Navigationsleiste und dem Inhalt mit unterschiedlichen
+ * Rastern, ausgehend von 960px und einer 12er Raumaufteilung.
+ */
+
+#net-idea div#middle {
+  margin: 0; /* top right bottom left */
+  padding: 0; /* top right bottom left */
+  background: transparent url(/assets/img/background-middle.png) scroll no-repeat top center;
+}
+
+#net-idea div#middle div.middle {
+  margin: 0 auto; /* top right bottom left :: standardkonforme horizontale Zentrierung */
+  padding: 0; /* top right bottom left */
+  padding-bottom: 20px;
+  width: 960px;
+  min-height: 500px;
+  text-align: left;
+  background: #ffffff url(/assets/img/background-middle-transition.png) scroll repeat-x top center;
+}
+
+/**
+ * FOOTER
+ *
+ * Fußzeile der Seite mit Links zu Unterseiten mit rechtlichen Hinweisen und einer kleinen Sitemap.
+ */
+
+#net-idea div#footer {
+  margin: 0; /* top right bottom left */
+  padding: 0; /* top right bottom left */
+  height: 185px;
+  text-align: center;
+  /* color: #da9f43; */
+  color: #fff;
+  background: #242424 url(/assets/img/background-footer.png) scroll no-repeat top center;
+}
+
+#net-idea div#footer div.footer {
+  margin: 0 auto; /* top right bottom left :: standardkonforme horizontale Zentrierung */
+  padding: 20px; /* top right bottom left */
+  width: 920px; /* 960 - 20 - 20 */
+  height: 145px; /* 185 - 20 - 20 */
+  text-align: left;
+}

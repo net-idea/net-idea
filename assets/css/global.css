@@ -1,0 +1,990 @@
+/**
+ * HTML
+ *
+ * Definition aller global verwendbaren HTML Elemente und im Speziellen der Strukturträger, die Kontextfrei verwendet werden.
+ */
+
+#tinymce {
+  padding: 10px;
+  font: normal normal normal 0.75em/1.375em "Bitstream Vera Sans", Tahoma, Verdana, Helvetica, Arial, sans-serif;
+  color: #001024;
+}
+
+.p1 {
+  margin-bottom: 0.5rem;
+}
+
+.p2 {
+  margin-bottom: 1rem;
+}
+
+.p3 {
+  margin-bottom: 1.5rem;
+}
+
+.p4 {
+  margin-bottom: 2rem;
+}
+
+.p5 {
+  margin-bottom: 2.5rem;
+}
+
+.p6 {
+  margin-bottom: 3rem;
+}
+
+/**
+ * Definition der Abstände aller Absatz erzeugenden Elemente...
+ */
+h1, h2, h3, h4, h5, h6, p, .p, ul, ol, dir, menu, pre {
+  margin: 0 0 10px 0; /* top right bottom left */
+  padding: 0; /* top right bottom left */
+}
+
+/**
+ * HEADLINES
+ *
+ * Aussehen von h[0..6] Überschriften...
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  word-spacing: 0.09em;
+  /* line-height: 1.375em; */
+  color: #333;
+  /* border-bottom: 1px solid #888; */
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/**
+ * PARAGRAPH
+ *
+ * Aussehen von Textblöcken, die allgemein auch als Absatz zu sehen sind.
+ */
+
+p {
+  line-height: 1.375em;
+  color: #333;
+}
+
+/**
+ * LINKS
+ *
+ * Diverse Studien und Untersuchen zeigen, dass Links in einer blauen Farbe und unterstrichen am häufigsten angeklikt werden
+ * und somit eher wahrgenommen werden.
+ *
+ * #0044CC : Microsoft findet das 80-Millionen-Dollar-Blau *LOL*
+ */
+
+a {
+  color: #044cc0;
+  text-decoration: none;
+  /* line-height: 16px; */
+  vertical-align: middle;
+}
+
+a:link {
+  color: #044cc0;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #044cc0; /* #44cc00 */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0080ff;
+  text-decoration: underline;
+}
+
+a:active {
+  /* color: #cc4400; */
+  /* text-decoration: underline; */
+  color: #044cc0;
+  text-decoration: none;
+}
+
+/**
+ * LINK ICONS
+ * Alle Links mit einem ICON...
+ */
+
+a.internal, a.external, a.email, a.down, .a_top a, a.top {
+  /* padding: 2px 18px 0px 1px; top right bottom left */
+  padding-right: 18px;
+}
+
+/**
+ * INTERNAL
+ *
+ * Links, die als interne Verweise markiert und mit einem entsprechenden Icon versehen werden...
+ */
+
+a.internal {
+  /* padding: 0 17px 0 1px; top right bottom left */
+  background: transparent url(/assets/icons/arrow-000-medium.png) no-repeat right center;
+}
+
+/**
+ * EXTERNAL
+ *
+ * Links, die als extern Verweise markiert und mit einem entsprechenden Icon versehen werden...
+ */
+
+a.external {
+  /* padding: 0 17px 0 1px; top right bottom left */
+  background: transparent url(/assets/icons/arrow-045-medium.png) no-repeat right center;
+}
+
+/**
+ * EMAIL
+ *
+ * Links, die als E-Mail im Zusammenhang mit einem Mailto markiert und mit einem entsprechenden Icon versehen werden...
+ */
+
+a.email {
+  /* padding: 0 17px 0 1px; top right bottom left */
+  /* mail.png mail--pencil.png */
+  background: transparent url(/assets/icons/mail-small.png) no-repeat right center;
+}
+
+/**
+ * HORIZONTAL RULER
+ *
+ * Aussehen von horizontalen Linie, als Seperatoren von Bereichen innerhalb der Seiten...
+ */
+
+hr {
+  margin: 20px 0; /* top right bottom left */
+  border: 0px none;
+  border-top: 2px dashed #666;
+  height: 1px;
+  background-color: transparent;
+}
+
+/**
+ * ORDERED & UNORDERED LISTS
+ * Aussehen der geordneten und ungeordneten Listen...
+ */
+
+ol {
+  padding-left: 20px; /* top right bottom left */
+}
+
+ul, dl {
+  padding-left: 16px; /* top right bottom left */
+}
+
+ul {
+  /* list-style-type: inherit; */
+  list-style-type: disc;
+  /* list-style-image: inherit; */
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+ol ol {
+  list-style-type: decimal;
+}
+
+
+ul ul {
+  list-style-type: circle;
+  margin-bottom: 0;
+}
+
+/**
+ * DEFINITION LIST
+ * Aussehen einfacher Definitionslisten...
+ */
+
+dl {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+dl dt, dl dd {
+  display: block;
+  float: left;
+  margin-bottom: 2px;
+}
+
+dl dt {
+  /* float: left; */
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: #124612;
+}
+
+dl dt:after {
+  content: ":";
+}
+
+dl dd {
+  /* float: left; */
+  margin-left: 5px;
+  /* margin: 0 0 0 130px; */
+  /* padding: 0 0 3px 0; */
+}
+
+dl dd h1:last-child,
+dl dd h2:last-child,
+dl dd h3:last-child,
+dl dd h4:last-child,
+dl dd h5:last-child,
+dl dd h6:last-child,
+dl dd p:last-child,
+dl dd ul:last-child,
+dl dd ol:last-child,
+dl dd dir:last-child,
+dl dd menu:last-child,
+dl dd pre:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * DIR
+ */
+
+dir {
+  margin-left: 2px;
+  list-style-type: none;
+}
+
+dir li {
+  padding-left: 18px;
+  background: transparent url(/assets/icons/disk.png) no-repeat left top;
+}
+
+/**
+ * TABLE
+ *
+ * Tabelle werden ohne Aussehen auf Grund der reset.css angezeigt. Dies wird auch so beibehalten.
+ * Mit der SIMPLE Klasse kann Tabelle expliziet eine Struktur gegeben werden...
+ */
+
+table.simple {
+  /* top right bottom left */
+  margin: 1px 1px 0.5em;
+  border: 0 none;
+  border-collapse: collapse;
+}
+
+table.simple * {
+  text-align: left;
+  /* vertical-align: baseline; */
+  vertical-align: top;
+}
+
+table.simple tr.headline {
+  background: #ccc;
+}
+
+table.simple tr.headline:hover {
+  background: #ddd;
+}
+
+table.simple tr.even {
+  background: #fff;
+}
+
+table.simple tr.even:hover {
+  background: #dff;
+}
+
+table.simple tr.uneven {
+  background: #eee;
+}
+
+table.simple tr.uneven:hover {
+  background: #fee;
+}
+
+table.simple th {
+  border: 1px solid #aaa;
+  padding: 2px;
+  font-weight: bold;
+  background: #ccc;
+}
+
+table.simple th:hover {
+  background: #ddd;
+}
+
+table.simple td {
+  padding: 2px 5px 2px 5px; /* top right bottom left */
+  border: 1px solid #ccc;
+}
+
+/**
+ * Alle letzten Kinder der absatzerzeugenden Elemente dürfen keine Anstände nach unten mehr haben...
+ */
+table.simple td h1:last-child,
+table.simple td h2:last-child,
+table.simple td h3:last-child,
+table.simple td h4:last-child,
+table.simple td h5:last-child,
+table.simple td h6:last-child,
+table.simple td p:last-child,
+table.simple td ul:last-child,
+table.simple td ol:last-child,
+table.simple td dir:last-child,
+table.simple td menu:last-child,
+table.simple td pre:last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * CODE
+ *
+ * Layouts für eingeklammerten Code, als 'code' Tags und Code Blöcke, als fließender Text in einer eigenständigen Code-Box.
+ */
+
+dfn {
+  padding: 0 5px; /* top right bottom left */
+  color: #C35617;
+  font: normal normal normal 1.05em/1em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  background-image: url(../img/workout-background-orange.png);
+}
+
+code {
+  padding: 0 5px; /* top right bottom left */
+  color: navy;
+  font: normal normal normal 1.05em/1em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  background-image: url(../img/workout-background-cyan.png);
+}
+
+pre.code {
+  position: relative;
+  /* margin: 0 0 10px 0; top right bottom left */
+  border: 1px dotted #808080;
+  padding: 5px; /* top right bottom left */
+  white-space: pre;
+  text-align: left;
+  font: normal normal normal 1em/1em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  color: #505050;
+  background-color: #ededed;
+}
+
+pre.shell {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  /* margin: 0 0 10px 0; top right bottom left */
+  padding: 5px; /* top right bottom left */
+  height: auto;
+  cursor: text;
+  color: rgb(164, 164, 164);
+  /* font-size: 8pt; */
+  /* line-height: 10pt; */
+  font: normal normal normal 1em/1.125em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  background-color: black;
+}
+
+pre.program,
+pre.programlisting {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  /* margin: 0 0 10px 0; top right bottom left */
+  border: 1px dashed #ff5400;
+  border-left: 5px solid #ff5400;
+  padding: 5px; /* top right bottom left */
+  font: normal normal normal 1em/1.125em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  /* font-size: 8pt; */
+  /* line-height: 10pt; */
+  background-image: url(../img/workout-background-orange.png);
+}
+
+div.example pre.program,
+div.example pre.programlisting {
+  margin-bottom: 0;
+  padding: 10px;
+  color: #000066;
+  background-color: #eff7ff;
+}
+
+/**
+ * Box zur Ausgaben von Quellcode...
+ *
+ * » php
+ * » mysql
+ * » html
+ * » xhtml
+ * » xml
+ * » css
+ */
+
+pre.php, pre.mysql, pre.html, pre.xhtml, pre.xml, pre.css {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  /* margin: 0 0 10px 0; top right bottom left */
+  border: 1px dashed #000066;
+  border-left: 5px solid #000066;
+  padding: 10px; /* top right bottom left */
+  color: navy;
+  font: normal normal normal 1em/1.125em "Bitstream Vera Sans Mono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", Monaco, "Courier New", Courier, monospace;
+  background-image: url(../img/workout-background-blue.png);
+}
+
+/**
+ * MARGIN & PADDING
+ */
+
+.nop {
+  padding: 0; /* top right bottom left */
+}
+
+.nom {
+  margin: 0; /* top right bottom left */
+}
+
+.nomp {
+  padding: 0;
+  margin: 0; /* top right bottom left */
+}
+
+/**
+ * INDENT
+ * Klassen zum Erzeugen von Abständen nach links oder rechts.
+ * Die Verwendung ist als 'Tabulator' Ersatz gedacht.
+ * Elemente die linksbündig eingerückt werden und einen Abstand zum nächsten Element zu erzeugen.
+ */
+
+.indentl {
+  margin-left: 10px; /* top right bottom left */
+}
+
+.lspacer, .lmargin {
+  margin: 0px 0px 0px 5px; /* top right bottom left */
+}
+
+.rspacer, .rmargin {
+  margin: 0px 5px 0px 0px; /* top right bottom left */
+}
+
+.lpadding {
+  padding: 0px 0px 0px 5px; /* top right bottom left */
+}
+
+.rpadding {
+  padding: 0px 5px 0px 0px; /* top right bottom left */
+}
+
+/**
+ * SUPER GLOBALS
+ * Im Folgenden werden alle global verwendbaren Elemente und Klassen, die unabhängig auf Objekte angewendet werden können,
+ * definiert.
+ */
+
+b, strong, .b, .bold, .strong {
+  font-weight: bold;
+}
+
+em, .em, .italic {
+  font-style: italic;
+}
+
+.dashed {
+  border-bottom: 1px dashed #808080;
+  line-height: 1.25em;
+}
+
+.underline {
+  border-bottom: 1px solid #808080;
+  line-height: 1.25em;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+/* Bildet das noch in HTML bekannte <nobr>...</nobr> nach. */
+.fleft {
+  float: left;
+}
+
+.cleft {
+  clear: left;
+}
+
+.fright {
+  float: right;
+}
+
+.cright {
+  clear: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.bottom {
+  vertical-align: bottom;
+}
+
+.invisible {
+  display: none;
+}
+
+/**
+ * Klassen zum Hervorheben von Suchbegriffen im Zusammenhang mit dem "searchhi.js" JavaScript
+ */
+
+.searchword {
+  color: #222;
+  background-color: #ffd;
+  border: 1px dotted #ffd;
+}
+
+.searchword0 {
+  color: #222;
+  background-color: #ff0;
+  border: 1px dotted #ff0;
+}
+
+.searchword1 {
+  color: #222;
+  background-color: #0f0;
+  border: 1px dotted #0f0;
+}
+
+.searchword2 {
+  color: #222;
+  background-color: #0ff;
+  border: 1px dotted #0ff;
+}
+
+.searchword3 {
+  color: #222;
+  background-color: #fbb;
+  border: 1px dotted #fbb;
+}
+
+.searchword4 {
+  color: #222;
+  background-color: #dfd;
+  border: 1px dotted #dfd;
+}
+
+.searchword5 {
+  color: #222;
+  background-color: #faf;
+  border: 1px dotted #faf;
+}
+
+.searchword6 {
+  color: #222;
+  background-color: #ccc;
+  border: 1px dotted #ccc;
+}
+
+/**
+ * Klassen zur Definition von global verwendbaren Farben zum hervorheben von Texten...
+ */
+
+.green, .success {
+  color: #2aaa20;
+}
+
+.blue, .note {
+  color: #003eb9;
+}
+
+.error {
+  color: #dd1100;
+}
+
+.red {
+  color: #db0133;
+}
+
+.light {
+  font-weight: normal;
+  color: gray;
+}
+
+.req {
+  color: #ff4500;
+  font-weight: normal;
+}
+
+.light10 {
+  color: #e5e5e5;
+}
+
+.light20 {
+  color: #cccccc;
+}
+
+.light30 {
+  color: #b3b3b3;
+}
+
+.light40 {
+  color: #999999;
+}
+
+.light50 {
+  color: #808080;
+}
+
+.light60 {
+  color: #666666;
+}
+
+.light70 {
+  color: #4d4d4d;
+}
+
+.light80 {
+  color: #333333;
+}
+
+.light90 {
+  color: #1a1a1a;
+}
+
+/**
+ * Klassen zur Definition unterschiedlicher Schriftgrößen...
+ */
+
+.text6 {
+  font-size: 6px;
+  font-weight: normal;
+}
+
+.text7 {
+  font-size: 7px;
+  font-weight: normal;
+}
+
+.text8 {
+  font-size: 8px;
+  font-weight: normal;
+}
+
+.text9 {
+  font-size: 9px;
+  font-weight: normal;
+}
+
+.text10 {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.text11 {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.text12 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.text13 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.text14 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.text15 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.text16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.text17 {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.text18 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.text19 {
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.text20 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.text21 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.text22 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.text23 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.text24 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.text25 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.text26 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.head6 {
+  font-size: 6px;
+  font-weight: bold;
+}
+
+.head7 {
+  font-size: 7px;
+  font-weight: bold;
+}
+
+.head8 {
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.head9 {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.head10 {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.head11 {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.head12 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.head13 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.head14 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.head15 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.head16 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.head17 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.head18 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.head19 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.head20 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.head21 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.head22 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.head23 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.head24 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.head25 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.head26 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/**
+ * IMAGES
+ *
+ * Bereich zum Einbau von Bildern innerhalb von Texten. Diese können entweder links oder rechts platziert werden.
+ */
+
+.image_left {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.image_right {
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+
+.image_left,
+.image_right {
+  margin-bottom: 1px;
+}
+
+/**
+ * MULTIMEDIA
+ */
+
+.mp3_player, .flv_player {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #ddd;
+}
+
+/**
+ * Tooltip
+ *
+ * Beispiele und Vorlagen gefunden auf:
+ *
+ * » https://flowplayer.org/tools/demos/index.html
+ * » https://jquery.bassistance.de/tooltip/demo/
+ */
+
+.tooltip {
+  display: none;
+}
+
+/**
+ * CLEARFIX
+ *
+ * Methoden zum Einschließen von Floats und zum Erzwingen von sauberen Abschlüßen von fließenden Boxen.
+ * Weitere Informationen sind unter https://jassesnee.de/easyclear/ zu finden.
+ */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* End hide from IE-mac */

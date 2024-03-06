@@ -1,0 +1,17 @@
+/**
+ * Struktur der Anzeige der Portfolio Übersicht...
+ */
+
+.index_portfolio_box {
+  float: left;
+}
+
+.index_portfolio_text {
+  float: right;
+  width: 265px;
+}
+
+.index_portfolio_image {
+  float: left;
+  width: 160px;
+}
