@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Überlappende Elemente</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #0c0c0c;
+    }
+
+    .container-outer {
+      z-index: 1;
+      position: relative;
+      width: 80vw;
+      min-height: 50vw;
+      height: calc(100% - 40px);
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 40px;
+      box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .container-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      width: calc(100% - 80px);
+      height: calc(100% - 80px);
+      padding: 20px;
+    }
+
+    canvas {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+      filter: blur(2px);
+    }
+  </style>
+</head>
+<body>
+<div class="container-outer">
+  <div class="container-inner">
+    <h1>Willkommen!</h1>
+    <p>Dies ist ein Beispiel für einen Page Wrapper mit unscharfer Transparenz, abgerundeten Ecken, einem breiten Rahmen und einem leuchtenden Schatten.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis et odio rutrum ultrices. Praesent pharetra mollis erat, quis rutrum lectus elementum sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce purus justo, pellentesque id aliquam sed, venenatis vel odio. Etiam ac lacus turpis. Pellentesque est nisi, molestie at laoreet non, mollis sit amet justo. Phasellus dictum lorem metus, non finibus velit lacinia sed. Quisque nisi libero, aliquam ut auctor sed, tristique ac libero. Morbi molestie auctor sapien. Etiam fermentum nulla nec velit bibendum vehicula. Aenean massa magna, feugiat at erat pulvinar, euismod fermentum arcu. Praesent nisl mi, sollicitudin at odio at, faucibus sagittis ex. Sed placerat velit sagittis tempus molestie. In viverra condimentum velit eu sollicitudin. Mauris porttitor faucibus blandit.</p>
+    <p>Curabitur dolor tellus, blandit at est a, maximus egestas lacus. Fusce porttitor dui odio, quis posuere dolor mollis nec. Mauris suscipit, elit et condimentum accumsan, nunc odio ultrices nunc, non varius sapien urna bibendum neque. Proin consequat ex a sapien bibendum, eget faucibus justo fringilla. Praesent tortor orci, facilisis eget pulvinar eu, blandit non ex. Integer lacinia pellentesque augue at interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p>Proin eu nisi arcu. Vestibulum facilisis faucibus ligula non gravida. Nulla pulvinar placerat eleifend. Ut pharetra interdum orci et aliquet. Nulla massa est, euismod ut diam non, ultrices finibus eros. Sed neque lorem, facilisis in justo et, dignissim sagittis felis. Mauris mattis lobortis lacus, porttitor ultricies nisl egestas ut.</p>
+    <p>Etiam ac ullamcorper purus. Nunc laoreet eros non justo tempor mollis. Aliquam accumsan porta dapibus. Suspendisse non imperdiet tortor. Morbi hendrerit efficitur iaculis. Mauris vestibulum nunc non est ultricies, vitae vehicula quam euismod. Vestibulum urna velit, ultricies eget efficitur in, consequat quis mi. Nam tristique eu nulla ac pretium. Etiam nisi ex, pretium a sem at, tempus commodo erat. Curabitur vitae efficitur lacus, eu sodales metus. Praesent quis felis diam. Sed quis felis augue. Quisque pharetra, ligula nec viverra placerat, mauris mi hendrerit sem, et commodo odio magna a metus. Quisque rhoncus egestas mi ullamcorper placerat. Donec elit massa, sollicitudin eget urna ut, imperdiet pretium magna.</p>
+    <p>Curabitur rutrum eu odio a tincidunt. Donec mattis lorem eu tincidunt laoreet. Donec lorem felis, porta sed lectus sit amet, convallis scelerisque arcu. Etiam placerat mollis sagittis. Sed non tortor bibendum augue mollis dignissim at id augue. Duis in leo odio. Proin sit amet leo risus. Nam non malesuada metus. Aliquam tempor euismod arcu. Sed dignissim nulla id dignissim bibendum.</p>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>

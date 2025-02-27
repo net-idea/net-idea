@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>net-idea web agency</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffff;
+      font: normal normal normal 3vw/1.125 "Bitstream Vera Sans", Tahoma, Verdana, Helvetica, Arial, sans-serif;
+      color: #001024;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      margin-top: 0;
+    }
+
+    .logo {
+      z-index: 1;
+      position: absolute;
+      top: 2vw;
+      left: calc(50% - 80vw / 2);
+      display: flex;
+      width: 45vw;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .outline {
+      z-index: 2;
+      position: relative;
+      width: 80vw;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4vw;
+      box-shadow: 0 0 4vw 2vw rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2vw;
+      box-sizing: border-box;
+      margin-top: 15vw;
+      overflow: hidden;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 2vw;
+      width: 100%;
+      padding: 2vw;
+      box-sizing: border-box;
+    }
+
+    canvas {
+      z-index: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0c0c0c;
+      filter: blur(2px);
+    }
+
+    footer {
+      z-index: 3;
+      width: 80vw;
+      padding: 1vw;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: 2vw;
+    }
+
+    footer a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 1vw;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="net-idea-logo-headline.png" alt="net-idea logo" class="logo">
+</header>
+<div class="outline">
+  <div class="container">
+    <h1>Comprehensive Web Solutions for Your Business</h1>
+
+    <p>At our Internet Agency, we specialize in delivering top-notch project planning and realization services. Our expertise spans full-stack development using PHP Symfony and Typescript Angular, ensuring robust and scalable solutions for your business needs.</p>
+
+    <p>Our team of experienced developers is dedicated to providing end-to-end solutions, from initial concept to final deployment. We leverage the latest technologies and best practices to create high-performance web applications that drive your business forward.</p>
+
+    <p>In addition to development, we offer comprehensive DevOps infrastructure services, including hosting and operations. Our goal is to ensure your applications run smoothly and efficiently, with minimal downtime and maximum performance.</p>
+
+    <p>Partner with us to experience the benefits of a seamless, integrated approach to web development and operations. Let us help you achieve your business objectives with our tailored solutions and expert support.</p>
+
+    <p>Contact us today to learn more about how we can assist you in transforming your digital presence and achieving your goals.</p>
+  </div>
+</div>
+<footer>
+  <a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutzerklärung</a>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>

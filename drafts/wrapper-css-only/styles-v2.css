@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 400px;
+}
+
+.page-wrapper {
+  position: absolute;
+  z-index: 1; /* Höherer z-index, damit es über dem Canvas liegt */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Zentriert das Element innerhalb des Containers */
+
+  min-height: 200px;
+  width: 50vw;
+  padding: 20px;
+
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+  background: white;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.page-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Adjust according to the desired shadow size */
+  left: -20px; /* Adjust according to the desired shadow size */
+  right: -20px; /* Adjust according to the desired shadow size */
+  bottom: -20px; /* Adjust according to the desired shadow size */
+  border-radius: 40px; /* Border-Radius */
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  z-index: -1;
+  filter: blur(10px);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  z-index: 0; /* Niedriger z-index, damit es hinter dem page-wrapper liegt */
+  filter: blur(2px);
+}
